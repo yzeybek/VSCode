@@ -15,6 +15,8 @@ Terminal=false
 Type=Application
 Categories=Development" > ~/.local/share/applications/VSCode.desktop
 
+chmod +x ~/.local/share/applications/VSCode.desktop
+
 update-desktop-database ~/.local/share/applications
 
 echo "alias code='/home/$USER/snap/VSCode-linux-x64/code'" >> ~/.zshrc
