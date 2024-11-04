@@ -17,7 +17,7 @@ Categories=Development" > ~/.local/share/applications/VSCode.desktop
 
 update-desktop-database ~/.local/share/applications
 
-echo "alias code='/home/$USER/snap/VSCode-linux-x64/code'" >> .zshrc
-echo "alias code='/home/$USER/snap/VSCode-linux-x64/code'" >> .zshrc
+echo "alias code='/home/$USER/snap/VSCode-linux-x64/code'" >> ~/.zshrc
+echo "alias code='/home/$USER/snap/VSCode-linux-x64/code'" >> ~/.bashrc
 
 
