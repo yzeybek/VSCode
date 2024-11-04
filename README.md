@@ -4,5 +4,5 @@ First go to this website and download vscode tar file: https://code.visualstudio
 
 Then use this command belove:
 ```
-git clone git@github.com:yzeybek/VSCode.git ~/VSCode && cd ~/VSCode && ./setup.sh
+git clone git@github.com:yzeybek/VSCode.git ~/VSCode && cd ~/VSCode && sh ./setup.sh
 ```
