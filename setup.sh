@@ -2,7 +2,7 @@
 
 tar -xzf ~/Downloads/code-stable-x64-*.tar.gz -C ~/snap/
 
-cp ~/VSCode/icon.png ~/snap/VSCode-linux-x64/icon.png
+cp ~/Ubuntu-VSCode/icon.png ~/snap/VSCode-linux-x64/icon.png
 
 USER=$(whoami)
 
@@ -13,9 +13,9 @@ Exec=/home/$USER/snap/VSCode-linux-x64/code
 Icon=/home/$USER/snap/VSCode-linux-x64/icon.png
 Terminal=false
 Type=Application
-Categories=Development" > ~/.local/share/applications/VSCode.desktop
+Categories=Development" > ~/.local/share/applications/Ubuntu-VSCode.desktop
 
-chmod +x ~/.local/share/applications/VSCode.desktop
+chmod +x ~/.local/share/applications/Ubuntu-VSCode.desktop
 
 update-desktop-database ~/.local/share/applications
 
@@ -23,7 +23,7 @@ current_favorites=$(gsettings get org.gnome.shell favorite-apps)
 
 current_favorites_cleaned=$(echo "$current_favorites" | sed "s/^\[//" | sed "s/\]//")
 
-new_favorites="$current_favorites_cleaned, 'VSCode.desktop'"
+new_favorites="$current_favorites_cleaned, 'Ubuntu-VSCode.desktop'"
 
 new_favorites_wrapped="[$new_favorites]"
 
@@ -34,3 +34,5 @@ echo "alias code='/home/$USER/snap/VSCode-linux-x64/code'" >> ~/.bashrc
 
 source ~/.bashrc
 source ~/.zshrc
+
+rm -rf ~/Ubuntu-VSCode ~/Downloads/code-stable-x64-*-tar.gz
