@@ -1,6 +1,9 @@
 # Ubuntu VSCode
 
-Just use this command it will handle everything for you:
+**First** download this folder: 
+https://code.visualstudio.com/docs/?dv=linux64
+
+**Second** run this command:
 ```
-xdg-open https://code.visualstudio.com/docs/?dv=linux64 && sleep 5 && git clone https://github.com/yzeybek/VSCode.git ~/Ubuntu-VSCode && cd ~/Ubuntu-VSCode && sh ./setup.sh
+git clone https://github.com/yzeybek/VSCode.git ~/Ubuntu-VSCode && cd ~/Ubuntu-VSCode && sh ./setup.sh
 ```
