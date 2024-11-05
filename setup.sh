@@ -32,7 +32,7 @@ gsettings set org.gnome.shell favorite-apps "$new_favorites_wrapped"
 echo "alias code='/home/$USER/snap/VSCode-linux-x64/code'" >> ~/.zshrc
 echo "alias code='/home/$USER/snap/VSCode-linux-x64/code'" >> ~/.bashrc
 
-rm -rf ~/Ubuntu-VSCode ~/Downloads/code-stable-x64-*-tar.gz
+rm -rf ~/Ubuntu-VSCode ~/Downloads/code-stable-x64-*.tar.gz
 
 source ~/.bashrc
 source ~/.zshrc
