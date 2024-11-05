@@ -19,6 +19,16 @@ chmod +x ~/.local/share/applications/VSCode.desktop
 
 update-desktop-database ~/.local/share/applications
 
+current_favorites=$(gsettings get org.gnome.shell favorite-apps)
+
+current_favorites_cleaned=$(echo "$current_favorites" | sed "s/^\[//" | sed "s/\]//")
+
+new_favorites="$current_favorites_cleaned, 'VSCode.desktop'"
+
+new_favorites_wrapped="[$new_favorites]"
+
+gsettings set org.gnome.shell favorite-apps "$new_favorites_wrapped"
+
 echo "alias code='/home/$USER/snap/VSCode-linux-x64/code'" >> ~/.zshrc
 echo "alias code='/home/$USER/snap/VSCode-linux-x64/code'" >> ~/.bashrc
 
